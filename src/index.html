@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="./index.css" type="text/css" rel="stylesheet">
-  <title>UOC Boilerplate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <title>Indice</title>
 </head>
 
-<body>
-  <div class="uoc-container">
-    <picture>
-      <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-      <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-    </picture>
-    <h1 class="text-4xl">Hello</h1>
-  </div>
-  <include src="./views/footer.html"></include>
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+<body class="bg-gray-200 text-black w-screen h-screen flex flex-col items-center justify-center text-lg space-y-6">
+    <include src="./views/header.html"></include>
+    <button
+        class="bg-white p-6 border-2 border-blue-500 rounded-lg w-2/5 hover:bg-blue-600 hover:border-blue-700 transition-all duration-300 ease-in-out hover:text-white"
+        onclick="window.location.href='blog.html'">
+        Blog
+    </button>
+    <button
+        class="bg-white p-6 border-2 border-green-500 rounded-lg w-2/5 hover:bg-green-600 hover:border-green-700 transition-all duration-300 ease-in-out hover:text-white"
+        onclick="window.location.href='speakers.html'">
+        Speakers
+    </button>
+
+
+
+    <div class="">
+        <div class="invisible">
+            <a href="blog.html" class="hidden"></a>
+            <a href="speakers.html" class="hidden"></a>
+        </div>
+    </div>
+
 </body>
 
 </html>

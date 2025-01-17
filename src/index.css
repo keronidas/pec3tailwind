@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contenedor-speaker {
+    @apply flex flex-col items-center justify-center shadow shadow-xl p-8 rounded transform transition-transform duration-500 hover:scale-[1.1]
+}
+.fila-speakers {
+    @apply flex flex-row justify-around items-center w-full
+}
